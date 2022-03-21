@@ -31,6 +31,7 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
+
 }
 
 html {
@@ -96,4 +97,17 @@ html {
     display: block;
   }
 }
+
+/*button light mode dark mode
+for us to change it from dark mode to light mode and vice versa from
+a click of a button we need some java script, make a js file in the terminal*/
+
+.light-mode {
+  background: blueviolet;
+  color: black;
+}
+
+.dark-mode {
+  background-color: black;
+  color: blueviolet;
 }
