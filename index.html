@@ -44,11 +44,11 @@
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  More
+                  CITS3403 Projects
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#LCMcalculator">LCM Calculator</a></li>
+                  <li><a class="dropdown-item" href="#wordle">Wordle</a></li>
                   <li><hr class="dropdown-divider"></li>
                   <li><a class="dropdown-item" href="#">Something else here</a></li>
                 </ul>
@@ -128,7 +128,64 @@
         </div>
     </section>
 
+    <!-- LCM SECTION -->
+    <section id="LCMcalculator">
+      <div class="container-fluid about-section">
+        <h1> Lowest Common Multiple </h1>
+        <p> In this section, I will attempt to make a form which will take 2 numbers and return the Lowest Common Multiple.</p>
+        <p> let's get started!</p>
+      </div>
+      
+      <div class="container-fluid">
+        <form name = "lcmform" action="javascript:void(0);" onsubmit="lowestCommonMultiple()"> 
+          <label>Enter the first Integer</label> <br>
+          <input type="integer" id="num1" name="num1"> <br>
+            
+          <label>Enter the second Integer</label> <br>
+          <input type="integer" id="num2" name="num2"> <br>
 
+          <input type="submit" value="Submit"> <br>
+      </form>
+
+      <label> Answer: </label>
+      <p id="lcmAnswer"> </p>
+      </div>
+
+    </section>
+
+    <!-- WORDLE SECTIOIN -->
+    <section id="wordle">
+      <div class="container-fluid about-section">
+        <h1> Wordle </h1>
+        <p> In this section, I will attempt to make a Wordle Clone.</p>
+        <p> let's get started!</p>
+      </div>
+
+      <div class="container-fluid">
+        <form name = "wordleClone" action="javascript:void(0);" onsubmit="wordle()">
+          <label> Enter Target Word:</label> <br>
+          <input type="text" id="targetWord" name="targetWord"> <br>
+            
+          <label>Enter Guess Word:</label> <br>
+          <input type="text" id="guessWord" name="guessWord"> <br>
+
+          <input type="submit" value="Submit"> <br>
+        </form>
+
+      <label> Answer: </label>
+      <p id = "wordleAnswer"></p>
+      </div>
+
+
+    </section>
+
+    <script src="app.js"></script>
+
+    <!-- LEAP YEAR CALCULATOR-->
+
+    <!-- HEX CODE AND CHANGING BACKGROUND-->
+
+    <!-- BUTTON THAT CHANGES COLOR TO RANDOM COLOR-->
 </body>
 
 </html>
